@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coolify Project</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+      :root {
+        --bg: #0f1116;
+        --card-bg: #161a21;
+        --text: #e4e7ec;
+        --accent: #4f46e5;
+        --accent-glow: rgba(79, 70, 229, 0.4);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: radial-gradient(
+          circle at 50% 30%,
+          #1a1f2e 0%,
+          var(--bg) 80%
+        );
+        color: var(--text);
+        font-family: 'Inter', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        background: linear-gradient(135deg, var(--accent), #6d28d9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #a1a1aa;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .card {
+        background: var(--card-bg);
+        padding: 2.5rem 3rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 30px var(--accent-glow);
+        text-align: center;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        backdrop-filter: blur(8px);
+      }
+
+      .card:hover {
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 0 50px var(--accent-glow);
+      }
+
+      .btn {
+        display: inline-block;
+        background: var(--accent);
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        transition: background 0.3s ease, transform 0.3s ease;
+      }
+
+      .btn:hover {
+        background: #4338ca;
+        transform: translateY(-2px);
+      }
+
+      footer {
+        position: absolute;
+        bottom: 1rem;
+        font-size: 0.9rem;
+        color: #6b7280;
+      }
+
+      .glow {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: var(--accent);
+        filter: blur(150px);
+        opacity: 0.25;
+        border-radius: 50%;
+        z-index: -1;
+        animation: float 10s ease-in-out infinite alternate;
+      }
+
+      .glow:nth-child(1) {
+        top: 10%;
+        left: 15%;
+      }
+      .glow:nth-child(2) {
+        bottom: 10%;
+        right: 15%;
+      }
+
+      @keyframes float {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glow"></div>
+    <div class="glow"></div>
+
+    <div class="card">
+      <h1>🚀 Coolify Project</h1>
+      <p>
+        Your deployment is live and looking sharp.<br />Welcome to your first
+        self-hosted adventure.
+      </p>
+      <a href="#" class="btn">Explore More</a>
+    </div>
+
+    <footer>Powered by Coolify • Crafted with ❤️</footer>
+  </body>
+</html>
