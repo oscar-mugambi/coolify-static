@@ -1,142 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coolify Project</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-
-      :root {
-        --bg: #0f1116;
-        --card-bg: #161a21;
-        --text: #e4e7ec;
-        --accent: #4f46e5;
-        --accent-glow: rgba(79, 70, 229, 0.4);
-      }
-
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        background: radial-gradient(
-          circle at 50% 30%,
-          #1a1f2e 0%,
-          var(--bg) 80%
-        );
-        color: var(--text);
-        font-family: 'Inter', sans-serif;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        overflow: hidden;
-      }
-
-      h1 {
-        font-size: 3rem;
-        font-weight: 800;
-        background: linear-gradient(135deg, var(--accent), #6d28d9);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 1rem;
-      }
-
-      p {
-        font-size: 1.2rem;
-        color: #a1a1aa;
-        margin-bottom: 2rem;
-        text-align: center;
-      }
-
-      .card {
-        background: var(--card-bg);
-        padding: 2.5rem 3rem;
-        border-radius: 1rem;
-        box-shadow: 0 0 30px var(--accent-glow);
-        text-align: center;
-        transition: transform 0.4s ease, box-shadow 0.4s ease;
-        backdrop-filter: blur(8px);
-      }
-
-      .card:hover {
-        transform: translateY(-5px) scale(1.02);
-        box-shadow: 0 0 50px var(--accent-glow);
-      }
-
-      .btn {
-        display: inline-block;
-        background: var(--accent);
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
-        padding: 0.75rem 1.5rem;
-        border-radius: 0.5rem;
-        transition: background 0.3s ease, transform 0.3s ease;
-      }
-
-      .btn:hover {
-        background: #4338ca;
-        transform: translateY(-2px);
-      }
-
-      footer {
-        position: absolute;
-        bottom: 1rem;
-        font-size: 0.9rem;
-        color: #6b7280;
-      }
-
-      .glow {
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        background: var(--accent);
-        filter: blur(150px);
-        opacity: 0.25;
-        border-radius: 50%;
-        z-index: -1;
-        animation: float 10s ease-in-out infinite alternate;
-      }
-
-      .glow:nth-child(1) {
-        top: 10%;
-        left: 15%;
-      }
-      .glow:nth-child(2) {
-        bottom: 10%;
-        right: 15%;
-      }
-
-      @keyframes float {
-        from {
-          transform: translateY(0px);
-        }
-        to {
-          transform: translateY(-20px);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="glow"></div>
-    <div class="glow"></div>
-
-    <div class="card">
-      <h1>🚀 Coolify Projects</h1>
-      <p>
-        Your deployment is live and looking sharp.<br />Welcome to your first
-        self-hosted adventure.
-      </p>
-      <a href="#" class="btn">Explore More</a>
-    </div>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -147,65 +8,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <style>
       body {
         font-family: 'Inter', sans-serif;
       }
-      .gradient-text {
-        background: linear-gradient(135deg, #4f46e5, #6d28d9);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-      .glow-animation {
-        animation: float 10s ease-in-out infinite alternate;
-      }
-      @keyframes float {
-        from {
-          transform: translateY(0px);
-        }
-        to {
-          transform: translateY(-20px);
-        }
-      }
     </style>
   </head>
-  <body
-    class="min-h-screen flex items-center justify-center flex-col overflow-hidden bg-gradient-to-b from-slate-900 via-[#0f1116] to-[#0f1116] relative"
-  >
-    <!-- Glowing orbs -->
-    <div
-      class="absolute top-[10%] left-[15%] w-[300px] h-[300px] bg-indigo-600 rounded-full blur-[150px] opacity-25 -z-10 glow-animation"
-    ></div>
-    <div
-      class="absolute bottom-[10%] right-[15%] w-[300px] h-[300px] bg-indigo-600 rounded-full blur-[150px] opacity-25 -z-10 glow-animation"
-      style="animation-delay: -5s"
-    ></div>
-
-    <!-- Main card -->
-    <div
-      class="bg-[#161a21] px-12 py-10 rounded-2xl shadow-[0_0_30px_rgba(79,70,229,0.4)] text-center transition-all duration-400 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_0_50px_rgba(79,70,229,0.4)] backdrop-blur-sm"
-    >
-      <h1 class="text-5xl font-extrabold gradient-text mb-4">
-        🚀 Coolify Projects
-      </h1>
-      <p class="text-xl text-zinc-400 mb-8 text-center">
-        Your deployment is live and looking sharp.<br />Welcome to your first
-        self-hosted adventure.
-      </p>
-      <a
-        href="#"
-        class="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:bg-indigo-700 hover:-translate-y-0.5"
-        >Explore More</a
+  <body class="min-h-screen flex items-center justify-center bg-slate-50">
+    <div class="max-w-2xl w-full mx-auto px-6">
+      <!-- Main card -->
+      <div
+        class="bg-white rounded-xl shadow-sm border border-slate-200 p-12 text-center"
       >
-    </div>
+        <div class="mb-4">
+          <span class="text-6xl">🚀</span>
+        </div>
+        <h1 class="text-4xl font-bold text-slate-900 mb-3">Coolify Projects</h1>
+        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+          Your deployment is live and looking sharp.<br />
+          Welcome to your first self-hosted adventure.
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-indigo-600 text-white font-medium px-8 py-3 rounded-lg transition-colors duration-200 hover:bg-indigo-700"
+        >
+          Explore More
+        </a>
+      </div>
 
-    <!-- Footer -->
-    <footer class="absolute bottom-4 text-sm text-gray-500">
-      Powered by Coolify
-    </footer>
+      <!-- Footer -->
+      <footer class="mt-8 text-center text-sm text-slate-500">
+        Powered by Coolify
+      </footer>
+    </div>
   </body>
 </html>
